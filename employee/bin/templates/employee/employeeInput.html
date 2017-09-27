@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+<title>Employee Registration - Techfun Sample CRUD</title>
+
+<div th:replace="fragments/header :: header-css" />
+
+<script th:src="@{/theme/ckeditor/ckeditor.js}"></script>
+
+</head>
+<body>
+
+	<div th:replace="fragments/header :: header"></div>
+
+	<div class="container">
+
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<h3 class="panel-title">Add Administrator</h3>
+			</div>
+
+			<div class="panel-body">
+				<form th:object="${employeeDto}" th:action="@{/employee/insertConfirm}"
+					method="post">
+
+					<div th:replace="fragments/validatorMessage :: message"></div>
+					<div th:replace="fragments/customMessage :: message"></div>
+
+					<div class="form-group">
+						<input type="text" th:field="*{employeeName}" class="form-control"
+							placeholder="Employee Name" />
+					</div>
+
+					<div class="form-group">
+						<input type="text" th:field="*{email}" class="form-control"
+							placeholder="Email" />
+					</div>
+
+					<div class="form-group">
+						<input type="password" th:field="*{password}"
+							class="form-control" placeholder="Password" />
+					</div>
+
+					<div class="form-group">
+						<input type="password" th:field="*{confirmPassword}"
+							class="form-control" placeholder="Confirm Password" />
+					</div>
+					
+					<div class="form-group">
+						<input type="text" th:field="*{phone}" class="form-control"
+							placeholder="Phone" />
+					</div>
+					
+					<div class="form-group">
+						<input type="text" th:field="*{address}" class="form-control"
+							placeholder="Address" />
+					</div>
+					
+					<div class="form-group">
+						<input type="text" th:field="*{remark}" class="form-control"
+							placeholder="Remark" />
+					</div>
+
+					<input type="submit" class="btn btn-danger pull-right" value="Save" />
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>

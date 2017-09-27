@@ -1,0 +1,23 @@
+2017-09-22 15:52:46 - Starting EmployeeApplicationTests on NB0029 with PID 12812 (started by techfun in D:\msp_paltform\springboot_workspace\employee)
+2017-09-22 15:52:46 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-22 15:52:46 - No active profile set, falling back to default profiles: default
+2017-09-22 15:52:50 - Started EmployeeApplicationTests in 5.16 seconds (JVM running for 6.653)
+2017-09-22 15:53:03 - Starting EmployeeApplication on NB0029 with PID 3876 (D:\msp_paltform\springboot_workspace\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\employee)
+2017-09-22 15:53:03 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-22 15:53:03 - No active profile set, falling back to default profiles: default
+2017-09-22 15:53:10 - Started EmployeeApplication in 6.998 seconds (JVM running for 7.811)
+2017-09-22 15:54:09 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-22 15:54:09 - ==> Parameters: (String)
+2017-09-22 15:54:09 - <==      Total: 0
+2017-09-22 15:54:50 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-22 15:54:50 - ==> Parameters: yewin@gmail.com(String)
+2017-09-22 15:54:50 - <==      Total: 1
+2017-09-22 15:54:54 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-22 15:54:54 - ==> Parameters: yewin@gmail.com(String)
+2017-09-22 15:54:54 - <==      Total: 1
+2017-09-22 15:54:55 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-22 15:54:55 - ==> Parameters: yewin@gmail.com(String)
+2017-09-22 15:54:55 - <==      Total: 1
+2017-09-22 15:55:00 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-22 15:55:00 - ==> Parameters: yewin@gmail.com(String)
+2017-09-22 15:55:00 - <==      Total: 1

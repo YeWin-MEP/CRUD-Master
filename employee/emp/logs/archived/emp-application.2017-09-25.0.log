@@ -1,0 +1,36 @@
+2017-09-25 12:33:51 - Starting EmployeeApplication on NB0029 with PID 14516 (D:\msp_paltform\springboot_workspace\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\employee)
+2017-09-25 12:33:51 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-25 12:33:51 - No active profile set, falling back to default profiles: default
+2017-09-25 12:34:00 - Started EmployeeApplication in 9.795 seconds (JVM running for 11.555)
+2017-09-25 12:34:57 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-25 12:34:57 - ==> Parameters: yewin@gmail.com(String)
+2017-09-25 12:34:57 - <==      Total: 1
+2017-09-25 16:46:19 - Starting EmployeeApplicationTests on NB0029 with PID 24252 (started by techfun in D:\msp_paltform\springboot_workspace\employee)
+2017-09-25 16:46:19 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-25 16:46:19 - No active profile set, falling back to default profiles: default
+2017-09-25 16:46:25 - Started EmployeeApplicationTests in 5.549 seconds (JVM running for 7.093)
+2017-09-25 16:46:31 - Starting EmployeeApplication on NB0029 with PID 22496 (D:\msp_paltform\springboot_workspace\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\employee)
+2017-09-25 16:46:31 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-25 16:46:31 - No active profile set, falling back to default profiles: default
+2017-09-25 16:46:36 - Started EmployeeApplication in 5.416 seconds (JVM running for 5.956)
+2017-09-25 16:47:04 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-25 16:47:04 - ==> Parameters: (String)
+2017-09-25 16:47:04 - <==      Total: 0
+2017-09-25 16:47:08 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-25 16:47:08 - ==> Parameters: ste(String)
+2017-09-25 16:47:08 - <==      Total: 0
+2017-09-25 16:47:14 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-25 16:47:14 - ==> Parameters: ste@gmail.com(String)
+2017-09-25 16:47:14 - <==      Total: 0
+2017-09-25 16:47:17 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-25 16:47:17 - ==> Parameters: sdfsdfsdf(String)
+2017-09-25 16:47:17 - <==      Total: 0
+2017-09-25 16:47:22 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-25 16:47:22 - ==> Parameters: yewin29081990@gmail.com(String)
+2017-09-25 16:47:22 - <==      Total: 0
+2017-09-25 16:47:26 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-25 16:47:26 - ==> Parameters: (String)
+2017-09-25 16:47:26 - <==      Total: 0
+2017-09-25 16:47:35 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-25 16:47:35 - ==> Parameters: yewin@gmail.com(String)
+2017-09-25 16:47:35 - <==      Total: 1
