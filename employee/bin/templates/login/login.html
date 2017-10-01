@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Login - Myanmar Entreprogrammer</title>
+<title>Login - Techfun Sample CRUD</title>
 
 <div th:replace="fragments/header :: header-css" />
 
@@ -26,15 +26,16 @@
 							<div class="alert alert-danger">Invalid username and
 								password.</div>
 						</div>
+						
 						<div th:if="${param.logout}">
 							<div class="alert alert-info">You have been logged out.</div>
 						</div>
 
 						<div class="form-group">
 							<input type="text" th:field="*{email}" id="adminemail"
-								class="form-control input-lg" placeholder="Name"
-								autofocus="true" />
+								class="form-control input-lg" placeholder="Name" />
 						</div>
+						
 						<div class="form-group">
 							<input type="password" th:field="*{password}" id="password"
 								class="form-control input-lg" placeholder="Password" />

@@ -48,6 +48,16 @@ public class EmployeeInsertServiceImpl implements EmployeeInsertService {
 				employeesDto.getConfirmPassword(), locale);
 		
 		return resultMessages;
+	}	
+
+	@Override
+	@ApplyAspect
+	@Transactional(propagation = Propagation.REQUIRED, rollbackFor = SystemException.class)
+	public boolean insertEmployees(EmployeeDto employeeDto) throws Exception {
+
+		employeeInsertDao.insertEmployees(changeEntityModel(employeeDto));
+		
+		return true;
 	}
 	
 	private boolean checkPasswordIsEmpty(ResultMessages resultMessages,
@@ -87,18 +97,8 @@ public class EmployeeInsertServiceImpl implements EmployeeInsertService {
 		}
 		return false;
 	}
-
-	@Override
-	@ApplyAspect
-	@Transactional(propagation = Propagation.REQUIRED, rollbackFor = SystemException.class)
-	public boolean insertEmployees(EmployeeDto employeeDto) throws Exception {
-
-		employeeInsertDao.insertEmployees(setDtoModelToEntityModel(employeeDto));
-		
-		return true;
-	}
 	
-	public Employees setDtoModelToEntityModel(EmployeeDto employeeDto) {
+	public Employees changeEntityModel(EmployeeDto employeeDto) {
 		Employees employee = new Employees();
 		
 		employee.setPassword(employeeDto.getPassword());

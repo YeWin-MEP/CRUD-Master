@@ -20,7 +20,6 @@
 				</div>
 			</div>
 
-
 			<div th:if="${not #lists.isEmpty(resultMessages.infoList)}"
 				id="infoMessage" class="alert alert-info">
 				<div th:each="info, iterStat : ${resultMessages.infoList}">
@@ -28,7 +27,6 @@
 						th:text="${info.text}">Info</span>
 				</div>
 			</div>
-
 
 			<div th:if="${not #lists.isEmpty(resultMessages.completeList)}"
 				id="completeMessage" class="alert alert-success">

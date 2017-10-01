@@ -1,0 +1,348 @@
+2017-09-29 09:05:21 - Starting EmployeeApplicationTests on NB0029 with PID 23916 (started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 09:05:21 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 09:05:21 - No active profile set, falling back to default profiles: default
+2017-09-29 09:05:29 - Started EmployeeApplicationTests in 8.746 seconds (JVM running for 9.995)
+2017-09-29 09:06:14 - Starting EmployeeApplication on NB0029 with PID 33936 (D:\msp_paltform\springboot_workspace\CRUD\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 09:06:14 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 09:06:14 - No active profile set, falling back to default profiles: default
+2017-09-29 09:06:23 - Started EmployeeApplication in 8.79 seconds (JVM running for 9.31)
+2017-09-29 09:06:43 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been started.
+2017-09-29 09:06:43 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-29 09:06:43 - ==> Parameters: yewin@gmail.com(String)
+2017-09-29 09:06:43 - <==      Total: 2
+2017-09-29 09:06:43 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been successfully finished.
+2017-09-29 09:06:44 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 09:06:44 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 09:06:44 - ==> Parameters: 
+2017-09-29 09:06:44 - <==      Total: 3
+2017-09-29 09:06:44 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
+2017-09-29 11:11:24 - Starting EmployeeApplicationTests on NB0029 with PID 30160 (started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 11:11:24 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 11:11:24 - No active profile set, falling back to default profiles: default
+2017-09-29 11:11:36 - Started EmployeeApplicationTests in 11.889 seconds (JVM running for 14.015)
+2017-09-29 11:12:00 - Starting EmployeeApplication on NB0029 with PID 37676 (D:\msp_paltform\springboot_workspace\CRUD\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 11:12:00 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 11:12:00 - No active profile set, falling back to default profiles: default
+2017-09-29 11:12:11 - Started EmployeeApplication in 10.669 seconds (JVM running for 11.433)
+2017-09-29 11:12:28 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been started.
+2017-09-29 11:12:28 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-29 11:12:28 - ==> Parameters: yewin@gmail.com(String)
+2017-09-29 11:12:28 - <==      Total: 2
+2017-09-29 11:12:28 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been successfully finished.
+2017-09-29 11:12:28 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 11:12:28 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 11:12:28 - ==> Parameters: 
+2017-09-29 11:12:28 - <==      Total: 3
+2017-09-29 11:12:28 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
+2017-09-29 11:12:49 - com.techfun.domain.employee.service.EmployeeDeleteServiceImpl.employeeDelete() method has been started.
+2017-09-29 11:13:54 - ==>  Preparing: delete from employees where employee_id = ? 
+2017-09-29 11:13:54 - ==> Parameters: 3(Integer)
+2017-09-29 11:13:54 - <==    Updates: 1
+2017-09-29 11:13:54 - com.techfun.domain.employee.service.EmployeeDeleteServiceImpl.employeeDelete() method has been successfully finished.
+2017-09-29 18:40:32 - Starting EmployeeApplicationTests on NB0029 with PID 28488 (started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 18:40:32 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 18:40:32 - No active profile set, falling back to default profiles: default
+2017-09-29 18:40:43 - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'employeeEditController' method 
+public org.springframework.web.servlet.ModelAndView com.techfun.domain.employee.controller.EmployeeEditController.employeeUpdate(java.lang.Integer) throws java.lang.Exception
+to {[/employee/delete/{employeeId}],methods=[GET]}: There is already 'employeeEditController' bean method
+public java.lang.String com.techfun.domain.employee.controller.EmployeeEditController.employeeDelete(java.lang.Integer) throws java.lang.Exception mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:147)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:129)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'employeeEditController' method 
+public org.springframework.web.servlet.ModelAndView com.techfun.domain.employee.controller.EmployeeEditController.employeeUpdate(java.lang.Integer) throws java.lang.Exception
+to {[/employee/delete/{employeeId}],methods=[GET]}: There is already 'employeeEditController' bean method
+public java.lang.String com.techfun.domain.employee.controller.EmployeeEditController.employeeDelete(java.lang.Integer) throws java.lang.Exception mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 62 common frames omitted
+2017-09-29 18:40:43 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@113dd636] to prepare test instance [com.techfun.EmployeeApplicationTests@56950ae0]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:147)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:129)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'employeeEditController' method 
+public org.springframework.web.servlet.ModelAndView com.techfun.domain.employee.controller.EmployeeEditController.employeeUpdate(java.lang.Integer) throws java.lang.Exception
+to {[/employee/delete/{employeeId}],methods=[GET]}: There is already 'employeeEditController' bean method
+public java.lang.String com.techfun.domain.employee.controller.EmployeeEditController.employeeDelete(java.lang.Integer) throws java.lang.Exception mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 47 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'employeeEditController' method 
+public org.springframework.web.servlet.ModelAndView com.techfun.domain.employee.controller.EmployeeEditController.employeeUpdate(java.lang.Integer) throws java.lang.Exception
+to {[/employee/delete/{employeeId}],methods=[GET]}: There is already 'employeeEditController' bean method
+public java.lang.String com.techfun.domain.employee.controller.EmployeeEditController.employeeDelete(java.lang.Integer) throws java.lang.Exception mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:576)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:540)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:264)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:250)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:214)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:127)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 62 common frames omitted
+2017-09-29 18:43:43 - Starting EmployeeApplicationTests on NB0029 with PID 18076 (started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 18:43:43 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 18:43:43 - No active profile set, falling back to default profiles: default
+2017-09-29 18:43:53 - Started EmployeeApplicationTests in 10.337 seconds (JVM running for 11.816)
+2017-09-29 18:44:08 - Starting EmployeeApplication on NB0029 with PID 38484 (D:\msp_paltform\springboot_workspace\CRUD\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 18:44:08 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 18:44:08 - No active profile set, falling back to default profiles: default
+2017-09-29 18:44:24 - Started EmployeeApplication in 17.148 seconds (JVM running for 18.254)
+2017-09-29 18:44:53 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been started.
+2017-09-29 18:44:53 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-29 18:44:53 - ==> Parameters: yewin@gmail.com(String)
+2017-09-29 18:44:53 - <==      Total: 1
+2017-09-29 18:44:53 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been successfully finished.
+2017-09-29 18:44:54 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 18:44:54 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 18:44:54 - ==> Parameters: 
+2017-09-29 18:44:54 - <==      Total: 2
+2017-09-29 18:44:54 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
+2017-09-29 18:45:39 - Starting EmployeeApplicationTests on NB0029 with PID 31624 (started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 18:45:39 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 18:45:39 - No active profile set, falling back to default profiles: default
+2017-09-29 18:45:48 - Started EmployeeApplicationTests in 10.038 seconds (JVM running for 11.393)
+2017-09-29 18:45:59 - Starting EmployeeApplication on NB0029 with PID 19048 (D:\msp_paltform\springboot_workspace\CRUD\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 18:45:59 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 18:45:59 - No active profile set, falling back to default profiles: default
+2017-09-29 18:46:11 - Started EmployeeApplication in 12.445 seconds (JVM running for 13.163)
+2017-09-29 18:49:43 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been started.
+2017-09-29 18:49:44 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-29 18:49:44 - ==> Parameters: yewin@gmail.com(String)
+2017-09-29 18:49:44 - <==      Total: 1
+2017-09-29 18:49:44 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been successfully finished.
+2017-09-29 18:49:44 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 18:49:44 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 18:49:44 - ==> Parameters: 
+2017-09-29 18:49:44 - <==      Total: 2
+2017-09-29 18:49:44 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
+2017-09-29 18:49:46 - com.techfun.domain.employee.service.EmployeeDeleteServiceImpl.employeeDelete() method has been started.
+2017-09-29 18:50:02 - Starting EmployeeApplication on NB0029 with PID 35128 (D:\msp_paltform\springboot_workspace\CRUD\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 18:50:02 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 18:50:02 - No active profile set, falling back to default profiles: default
+2017-09-29 18:50:15 - Started EmployeeApplication in 13.324 seconds (JVM running for 14.12)
+2017-09-29 18:52:05 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been started.
+2017-09-29 18:52:05 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-29 18:52:05 - ==> Parameters: yewin@gmail.com(String)
+2017-09-29 18:52:05 - <==      Total: 1
+2017-09-29 18:52:05 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been successfully finished.
+2017-09-29 18:52:06 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 18:52:06 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 18:52:06 - ==> Parameters: 
+2017-09-29 18:52:06 - <==      Total: 2
+2017-09-29 18:52:06 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
+2017-09-29 18:52:16 - com.techfun.domain.employee.service.EmployeeUpdateServiceImpl.getEmployeeById() method has been started.
+2017-09-29 18:52:16 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees where employee_id = ? 
+2017-09-29 18:52:16 - ==> Parameters: 2(Integer)
+2017-09-29 18:52:16 - <==      Total: 1
+2017-09-29 18:52:16 - com.techfun.domain.employee.service.EmployeeUpdateServiceImpl.getEmployeeById() method has been successfully finished.
+2017-09-29 19:11:34 - Starting EmployeeApplicationTests on NB0029 with PID 23120 (started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 19:11:34 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 19:11:34 - No active profile set, falling back to default profiles: default
+2017-09-29 19:11:43 - Started EmployeeApplicationTests in 9.773 seconds (JVM running for 10.974)
+2017-09-29 19:11:54 - Starting EmployeeApplication on NB0029 with PID 37160 (D:\msp_paltform\springboot_workspace\CRUD\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 19:11:54 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 19:11:54 - No active profile set, falling back to default profiles: default
+2017-09-29 19:12:05 - Started EmployeeApplication in 11.402 seconds (JVM running for 12.181)
+2017-09-29 19:30:23 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been started.
+2017-09-29 19:30:23 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-29 19:30:23 - ==> Parameters: yewin@gmail.com(String)
+2017-09-29 19:30:23 - <==      Total: 1
+2017-09-29 19:30:23 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been successfully finished.
+2017-09-29 19:30:23 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 19:30:23 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 19:30:23 - ==> Parameters: 
+2017-09-29 19:30:23 - <==      Total: 2
+2017-09-29 19:30:23 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
+2017-09-29 19:30:32 - com.techfun.domain.employee.service.EmployeeUpdateServiceImpl.getEmployeeById() method has been started.
+2017-09-29 19:30:32 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees where employee_id = ? 
+2017-09-29 19:30:32 - ==> Parameters: 2(Integer)
+2017-09-29 19:30:32 - <==      Total: 1
+2017-09-29 19:30:32 - com.techfun.domain.employee.service.EmployeeUpdateServiceImpl.getEmployeeById() method has been successfully finished.
+2017-09-29 19:30:36 - com.techfun.domain.employee.service.EmployeeUpdateConfirmServiceImpl.updateEmployee() method has been started.
+2017-09-29 19:30:36 - ==>  Preparing: update employees SET email = ?, employee_name = ?, phone = ?, address = ?, remark = ? where employee_id = ? 
+2017-09-29 19:30:36 - ==> Parameters: ronaldo@gmail.com(String), C. Ronaldo1(String), 092828292(String), Yangon(String), Yangon(String), null
+2017-09-29 19:30:36 - <==    Updates: 0
+2017-09-29 19:30:36 - com.techfun.domain.employee.service.EmployeeUpdateConfirmServiceImpl.updateEmployee() method has been successfully finished.
+2017-09-29 19:30:42 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 19:30:42 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 19:30:42 - ==> Parameters: 
+2017-09-29 19:30:42 - <==      Total: 2
+2017-09-29 19:30:42 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
+2017-09-29 19:31:20 - com.techfun.domain.employee.service.EmployeeUpdateServiceImpl.getEmployeeById() method has been started.
+2017-09-29 19:31:20 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees where employee_id = ? 
+2017-09-29 19:31:20 - ==> Parameters: 2(Integer)
+2017-09-29 19:31:20 - <==      Total: 1
+2017-09-29 19:31:20 - com.techfun.domain.employee.service.EmployeeUpdateServiceImpl.getEmployeeById() method has been successfully finished.
+2017-09-29 19:31:24 - com.techfun.domain.employee.service.EmployeeUpdateConfirmServiceImpl.updateEmployee() method has been started.
+2017-09-29 19:31:24 - ==>  Preparing: update employees SET email = ?, employee_name = ?, phone = ?, address = ?, remark = ? where employee_id = ? 
+2017-09-29 19:31:24 - ==> Parameters: ronaldo@gmail.com(String), C. Ronaldo1(String), 092828292111(String), Yangon(String), Yangon(String), null
+2017-09-29 19:31:24 - <==    Updates: 0
+2017-09-29 19:31:44 - com.techfun.domain.employee.service.EmployeeUpdateConfirmServiceImpl.updateEmployee() method has been successfully finished.
+2017-09-29 19:31:52 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 19:31:52 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 19:31:52 - ==> Parameters: 
+2017-09-29 19:31:52 - <==      Total: 2
+2017-09-29 19:31:52 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
+2017-09-29 19:32:44 - Starting EmployeeApplicationTests on NB0029 with PID 5680 (started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 19:32:44 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 19:32:44 - No active profile set, falling back to default profiles: default
+2017-09-29 19:32:53 - Started EmployeeApplicationTests in 9.532 seconds (JVM running for 11.068)
+2017-09-29 19:33:00 - Starting EmployeeApplication on NB0029 with PID 22664 (D:\msp_paltform\springboot_workspace\CRUD\employee\bin started by techfun in D:\msp_paltform\springboot_workspace\CRUD\employee)
+2017-09-29 19:33:00 - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2017-09-29 19:33:00 - No active profile set, falling back to default profiles: default
+2017-09-29 19:33:12 - Started EmployeeApplication in 11.666 seconds (JVM running for 12.396)
+2017-09-29 19:33:30 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been started.
+2017-09-29 19:33:31 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( email = ? ) 
+2017-09-29 19:33:31 - ==> Parameters: yewin@gmail.com(String)
+2017-09-29 19:33:31 - <==      Total: 1
+2017-09-29 19:33:31 - com.techfun.security.service.EmployeeDetailsServiceImpl.loadUserByUsername() method has been successfully finished.
+2017-09-29 19:33:31 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 19:33:31 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 19:33:31 - ==> Parameters: 
+2017-09-29 19:33:31 - <==      Total: 2
+2017-09-29 19:33:31 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
+2017-09-29 19:33:33 - com.techfun.domain.employee.service.EmployeeUpdateServiceImpl.getEmployeeById() method has been started.
+2017-09-29 19:33:33 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees where employee_id = ? 
+2017-09-29 19:33:33 - ==> Parameters: 2(Integer)
+2017-09-29 19:33:33 - <==      Total: 1
+2017-09-29 19:33:33 - com.techfun.domain.employee.service.EmployeeUpdateServiceImpl.getEmployeeById() method has been successfully finished.
+2017-09-29 19:33:36 - com.techfun.domain.employee.service.EmployeeUpdateConfirmServiceImpl.updateEmployee() method has been started.
+2017-09-29 19:33:41 - ==>  Preparing: update employees SET email = ?, employee_name = ?, phone = ?, address = ?, remark = ? where employee_id = ? 
+2017-09-29 19:33:41 - ==> Parameters: ronaldo@gmail.com(String), C. Ronaldo11(String), 092828292111(String), Yangon(String), Yangon(String), 2(Integer)
+2017-09-29 19:33:41 - <==    Updates: 1
+2017-09-29 19:33:41 - com.techfun.domain.employee.service.EmployeeUpdateConfirmServiceImpl.updateEmployee() method has been successfully finished.
+2017-09-29 19:33:46 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been started.
+2017-09-29 19:33:46 - ==>  Preparing: select employee_id, password, email, employee_name, phone, address, remark from employees WHERE ( employee_id is not null ) 
+2017-09-29 19:33:46 - ==> Parameters: 
+2017-09-29 19:33:46 - <==      Total: 2
+2017-09-29 19:33:46 - com.techfun.domain.employee.service.EmployeeListServiceImpl.getEmployeeList() method has been successfully finished.
