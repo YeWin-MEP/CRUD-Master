@@ -65,4 +65,11 @@ public class EmployeeListDto implements Serializable {
 	public void setRemark(String remark) {
 		this.remark = remark;
 	}
+
+	@Override
+	public String toString() {
+		return "EmployeeListDto [employeeId=" + employeeId + ", email=" + email
+				+ ", employeeName=" + employeeName + ", phone=" + phone
+				+ ", address=" + address + ", remark=" + remark + "]";
+	}
 }
